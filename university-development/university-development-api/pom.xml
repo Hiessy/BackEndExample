@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.example.backend</groupId>
+		<artifactId>university-development</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>university-development-api</artifactId>
+	<name>university-development-api</name>
+	<url>http://maven.apache.org</url>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>university-development-api</module>
+		<module>university-development-commons</module>
+		<module>university-development-domain</module>
+		<module>university-development-persistence</module>
+		<module>university-development-service</module>
+		<module>university-development-transformer</module>
+	</modules>
+
+	<developers>
+		<developer>
+			<name>Martin Diaz</name>
+			<email>diaz.martin06@gmail.com</email>
+			<organization>ALMA Digital</organization>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>4.1.6.RELEASE</spring.version>
+		<spring-boot.version>1.2.2.RELEASE</spring-boot.version>
+		<junit.version>4.11</junit.version>
+		<mockito.version>1.9.0</mockito.version>
+		<hibernate.version>4.3.5.Final</hibernate.version>
+		<javax-validation.version>1.1.0.Final</javax-validation.version>
+		<jackson-mapper.version>1.9.13</jackson-mapper.version>
+		<orika.version>1.4.5</orika.version>
+		<javax_el-api.version>2.2.4</javax_el-api.version>
+		<el-ri.version>1.0</el-ri.version>
+	</properties>
+
+	<dependencies>
+			<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+</project>
