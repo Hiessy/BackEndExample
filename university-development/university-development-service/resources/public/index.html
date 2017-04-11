@@ -1,0 +1,49 @@
+<!DOCTYPE html>  
+<html lang="en"><head>  
+<meta charset="utf-8">  
+<title>JavaScript Form Validation using a sample registration form</title>  
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />  
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />  
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />  
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script src="sample-registration-form-validation.js"></script>  
+</head>  
+<body onload="document.registration.userid.focus();">  
+	<h1>Registration Form</h1>  
+	<p>Use tab keys to move from one input field to the next.</p>  
+				<div class="form-horizontal">
+	<form name='registration' onSubmit="return formValidation();">  
+		<ul>
+
+			<li><label for="userid" id="userid">User id:</label></li>  
+			<li><input type="text" name="userid" size="12" /></li>
+
+			<div class="inline">
+				<div>
+					<li><label for="firstname">First Name:</label></li>  
+					<li><input type="text" name="firstname" size="50" /></li> 
+				</div>
+				<div>
+					<li><label for="lastname">Last Name:</label></li>  
+					<li><input type="text" name="lastname" size="50" /></li> 
+				</div>
+			</div>
+
+			<li><label for="type">Type:</label></li> 
+			<li><select name="type">  	
+				<option selected="" value="Default">(What type of member are you!!)</option>  
+				<option value="MEMBER">MEMBER</option>  
+				<option value="ANONYMOUS">ANONYMOUS</option>  
+			</select></li>  
+			<li><label for="gender">Gender:</label></li>  
+			<li><select name="gender">  
+				<option selected="" value="Default">(Please select a Gender)</option>  
+				<option value="MASCULINE">MASCULINE</option>  
+				<option value="FEMININE">FEMININE</option>  
+			</select></li>
+			<li><input type="submit" name="submit" value="Submit" /></li>  
+		</ul>  
+	</form>  
+
+</body>  
+</html>  
